@@ -1,0 +1,136 @@
+/* Navbar CSS Start */
+.navbar-area .main-nav {
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.navbar-area .main-nav .navbar {
+  padding: 0;
+}
+
+.navbar-area .main-nav .navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item {
+  padding: 10px 0;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  font-family: "Catamaran", sans-serif;
+  font-size: 17px;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+  border: 0;
+  content: '\ea17';
+  font-family: 'boxicons';
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #F2811D;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item {
+  padding: 0;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
+  border-bottom: 1px dashed #4d5877;
+  background: #383240;
+  font-size: 15px !important;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link:hover {
+  color: #ffffff;
+  background: #F2811D !important;
+}
+
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:last-child .nav-link {
+  border-bottom: 0;
+}
+
+.navbar-area .main-nav .navbar .other-option .signin-btn, .navbar-area .main-nav .navbar .other-option .signup-btn {
+  color: #fff;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 20px;
+  background: #F2811D;
+  border-radius: 5px;
+}
+
+.navbar-area .main-nav .navbar .other-option .signin-btn:hover, .navbar-area .main-nav .navbar .other-option .signup-btn:hover {
+  background: #001935;
+  color: #fff;
+}
+
+.navbar-area .main-nav .navbar .other-option .signup-btn {
+  background: none;
+  padding: 0;
+  margin-right: 10px;
+  color: #383240;
+}
+
+.navbar-area .main-nav .navbar .other-option .signup-btn:hover {
+  color: #F2811D;
+  background: none;
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100% !important;
+}
+
+/* Navbar CSS End */
+/* Mobile Navbar CSS */
+@media (max-width: 767px){
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #010c29;
+    padding: 0;
+  }
+  .navbar-area .mean-container .mean-bar nav .navbar-nav {
+    height: 300px;
+    overflow: auto;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    padding: 15px 15px 0 0;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    position: relative;
+    top: 8px;
+    margin-top: -5px;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  .navbar-area .other-option {
+    display: none;
+  }
+}
+/* Mobile Navbar CSS End */
