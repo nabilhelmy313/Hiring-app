@@ -1,0 +1,63 @@
+/*---------- Home Page Two CSS Start ----------*/
+/* Banner CSS Start */
+.banner-style-two {
+  /* background-image: url(../img/banner/2.jpg); */
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  z-index: 0;
+}
+
+.banner-style-two::before {
+  position: absolute;
+  content: '';
+  background: rgba(243, 123, 31, 0.85);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner-style-two .banner-text {
+  max-width: 650px;
+}
+
+.banner-style-two .banner-text span {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.banner-style-two .banner-text h1 {
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.banner-style-two .banner-text p {
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.banner-style-two .banner-img {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  max-width: 500px;
+}
+
+.banner-style-two .banner-img img {
+  border-radius: 65% 35% 42% 58% / 55% 48% 52% 45%;
+  -webkit-animation: wrap 5s infinite alternate;
+          animation: wrap 5s infinite alternate;
+}
+
+/* Banner CSS End */
+/* Find Section CSS Start */
+
