@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7e8ea479-6162-43d0-b3df-04460ef24690": {
+      "ProjectGuid": "7e8ea479-6162-43d0-b3df-04460ef24690",
+      "DisplayName": "Domain",
+      "ColorIndex": 0
+    },
+    "06320123-6604-4cbf-b7e8-29960e5e79ac": {
+      "ProjectGuid": "06320123-6604-4cbf-b7e8-29960e5e79ac",
+      "DisplayName": "Application",
+      "ColorIndex": 1
+    },
+    "da5c3049-bec0-41d5-a738-ef1f6a35378d": {
+      "ProjectGuid": "da5c3049-bec0-41d5-a738-ef1f6a35378d",
+      "DisplayName": "Persistence",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "318a8996-8302-4fb9-8e52-fa0dda13e95f": {
+      "ProjectGuid": "318a8996-8302-4fb9-8e52-fa0dda13e95f",
+      "DisplayName": "Hiring",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
