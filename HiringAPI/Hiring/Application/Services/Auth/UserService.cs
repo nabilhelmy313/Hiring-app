@@ -61,8 +61,26 @@ namespace Application.Services.Auth
             }
         }
 
+        public async Task<ServiceResponse<int>> RegisterAccounUser(RegisterDto registerAccountUserDto)
+        {
+            try
+            {
+                #region Guard
+                var userExists = await _appUserRepository.GetUserByEmail(registerAccountUserDto.Email);
+                if (userExists != null) return new ServiceResponse<int> { Success = false, Message = "اسم المستخدم موجود من قبل" };
+                #endregion
+                var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
+                var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
+                if (!result.Succeeded) return new ServiceResponse<int> { Success = false, Message = string.Join(Environment.NewLine, result.Errors.Select(x => x.Description)) };
+                await _appUserRepository.AddRoleToUser(user, registerAccountUserDto.Role);
+                return new ServiceResponse<int> { Success = true, Data = 1 };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
-       
 
         //private async Task<bool> CheckIfWorkUnitEmployeeActiveAsync(ApplicationUser user)
         //{
@@ -106,7 +124,7 @@ namespace Application.Services.Auth
         //    return user;
         //}
 
-       
+
         //public async Task DeletAccountUser(string userName)
         //{
         //    try

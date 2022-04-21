@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L5FUHSvjx9YV7EvBclEMlWQ7RUky+G2uSZyCP5CYzioZmSBxtRkV9Jgettji1mzHDSVvjMy68qbArJnbOK77qw==",
+  "dgSpecHash": "kocwAUoADjFC9IhR9X172EnsfxFLOhBUvX/sayhF3J2qkNAlj47RzTJ4d9GJQcAqf0tSLOg1DZXploD8MkMX1g==",
   "success": true,
-  "projectFilePath": "D:\\HiringAPI\\Hiring\\Hiring\\Hiring.csproj",
+  "projectFilePath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\Hiring.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nabil\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Nabil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

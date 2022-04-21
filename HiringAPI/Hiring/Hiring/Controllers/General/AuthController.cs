@@ -24,5 +24,13 @@ namespace Hiring.Controllers.General
             var token = await _userService.Token(loginDto);
             return Ok(token);
         }
+        [AllowAnonymous]
+        [HttpPost]
+        [Route(RouteClass.Auth.Register)]
+        public async Task<IActionResult> Register([FromBody] RegisterDto RegisterDto)
+        {
+            var token = await _userService.RegisterAccounUser(RegisterDto);
+            return Ok(token);
+        }
     }
 }

@@ -65,5 +65,15 @@ namespace Persistence.Repositories.Auth
                 throw;
             }
         }
+        public async Task<ApplicationUser> GetUserByEmail(string email)
+        {
+            var User = await _userManager.Users.Where(x => x.Email ==email).FirstOrDefaultAsync();
+            return User;
+        }
+
+        public async Task AddRoleToUser(ApplicationUser user, string Role)
+        {
+            await _userManager.AddToRoleAsync(user, Role);
+        }
     }
 }

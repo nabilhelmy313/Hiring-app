@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VCRQj+0R5uk6KBIy5K/N/2YmI+zMcYDmOrlwklUIs2wMy56NUiQy1JBf4Gdg6k10Q+vB6Us5njROLMW4ODEYHA==",
+  "dgSpecHash": "TNJGIM8ZupSaQrMbGSQHJf5eWutuimChpMNrb9LSObvtEvH9vCNjeEalvhUvdTM6FAdh+1JkE4Uaj9QFR3l+KA==",
   "success": true,
-  "projectFilePath": "D:\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
+  "projectFilePath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nabil\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Nabil\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
