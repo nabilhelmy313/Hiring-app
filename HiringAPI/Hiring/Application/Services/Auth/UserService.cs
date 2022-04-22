@@ -2,6 +2,7 @@
 using Application.Interfaces.Repositories.General.Auth;
 using Application.Interfaces.Services.General;
 using AutoMapper;
+using Domain.Common;
 using Domain.Dto.General.Auth;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Identity;
@@ -46,7 +47,7 @@ namespace Application.Services.Auth
             try
             {
                 if (string.IsNullOrWhiteSpace(loginDto.UserName) || string.IsNullOrWhiteSpace(loginDto.Password))
-                    return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "user name or password is null"};
+                    return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "user name or password is null" };
 
                 var token = await _appUserRepository.
                     GetToken(loginDto.UserName, loginDto.Password, "HiringSuperSecretPassword", "Hiring.com", "Hiring.com");
@@ -72,6 +73,8 @@ namespace Application.Services.Auth
                 var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
                 var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
                 if (!result.Succeeded) return new ServiceResponse<int> { Success = false, Message = string.Join(Environment.NewLine, result.Errors.Select(x => x.Description)) };
+                if (registerAccountUserDto.Role == RolesName.Employer.ToString())
+                    registerAccountUserDto.IsActive = false;
                 await _appUserRepository.AddRoleToUser(user, registerAccountUserDto.Role);
                 return new ServiceResponse<int> { Success = true, Data = 1 };
             }

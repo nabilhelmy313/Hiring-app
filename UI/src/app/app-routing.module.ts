@@ -1,3 +1,5 @@
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './layout/main/main.component';
@@ -10,8 +12,17 @@ const routes: Routes = [
     children:[
       {
         path:'',
-        component: PublicHomeComponent
-      }
+        component: PublicHomeComponent,
+      },
+      {
+        path:'signin',
+        component: SigninComponent,
+      },
+      {
+        path:'signup',
+        component: SignupComponent,
+      },
+
     ]
   }
 ];
