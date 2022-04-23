@@ -10,6 +10,6 @@ namespace Domain.Entities.General
     public class ApplicationUser : IdentityUser<Guid>
     {
         public virtual ICollection<ApplicationRole> UserRoles { get; set; } = new List<ApplicationRole>();
-
+        public bool IsActive { get; set; }
     }
 }

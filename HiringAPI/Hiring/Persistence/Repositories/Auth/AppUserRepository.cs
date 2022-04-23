@@ -28,14 +28,13 @@ namespace Persistence.Repositories.Auth
         {
             try
             {
-                ApplicationUser user = new();
-                //var user = await _userManager.Users.Include(q => q.UserRoles).ThenInclude(q => q.Role).ThenInclude(q => q.RoleDepartment).Where(q => q.UserName == userName).FirstOrDefaultAsync();
+                var user = await _userManager.Users.Include(q => q.UserRoles).Where(q => q.UserName == userName).FirstOrDefaultAsync();
                 if (user != null && await _userManager.CheckPasswordAsync(user, password))
                 {
                     var claims = new[]{
                     new Claim(JwtRegisteredClaimNames.UniqueName, userName),
-                    //new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                    //new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString())
+                    new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                    new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString())
                 };
 
                     var superSecretPassword = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(topSecretKey));
@@ -53,7 +52,7 @@ namespace Persistence.Repositories.Auth
                         Token = new JwtSecurityTokenHandler().WriteToken(token),
                         Expiration = token.ValidTo,
                         CurrentUser = user,
-
+                        IsActive = user.IsActive
                     };
                 }
                

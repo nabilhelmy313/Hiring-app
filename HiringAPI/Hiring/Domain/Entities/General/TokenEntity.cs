@@ -10,7 +10,8 @@ namespace Domain.Entities.General
     {
         public string? Token { get; set; }
         public DateTime? Expiration { get; set; }
-        public ApplicationUser? CurrentUser { get; set; }
+        public ApplicationUser CurrentUser { get; set; }
+        public bool IsActive { get; set; }
 
     }
 }

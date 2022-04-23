@@ -9,5 +9,6 @@ namespace Domain.Entities.General
 {
     public class ApplicationRole:IdentityRole<Guid>
     {
+        public virtual ICollection<ApplicationUser>  ApplicationUsers { get; set; } = new List<ApplicationUser>();
     }
 }

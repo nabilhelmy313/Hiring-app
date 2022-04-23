@@ -12,8 +12,8 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(HiringDbContext))]
-    [Migration("20220420025100_init")]
-    partial class init
+    [Migration("20220423225022_add-isActive")]
+    partial class addisActive
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,21 @@ namespace Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("ApplicationRoleApplicationUser", b =>
+                {
+                    b.Property<Guid>("ApplicationUsersId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserRolesId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ApplicationUsersId", "UserRolesId");
+
+                    b.HasIndex("UserRolesId");
+
+                    b.ToTable("ApplicationRoleApplicationUser");
+                });
 
             modelBuilder.Entity("Domain.Entities.General.ApplicationRole", b =>
                 {
@@ -70,6 +85,9 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
@@ -219,6 +237,21 @@ namespace Persistence.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("ApplicationRoleApplicationUser", b =>
+                {
+                    b.HasOne("Domain.Entities.General.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("ApplicationUsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.General.ApplicationRole", null)
+                        .WithMany()
+                        .HasForeignKey("UserRolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>

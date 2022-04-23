@@ -71,16 +71,20 @@ namespace Application.Services.Auth
                 if (userExists != null) return new ServiceResponse<int> { Success = false, Message = "اسم المستخدم موجود من قبل" };
                 #endregion
                 var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
+                user.UserName = registerAccountUserDto.Email;
                 var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
                 if (!result.Succeeded) return new ServiceResponse<int> { Success = false, Message = string.Join(Environment.NewLine, result.Errors.Select(x => x.Description)) };
                 if (registerAccountUserDto.Role == RolesName.Employer.ToString())
                     registerAccountUserDto.IsActive = false;
+                else
+                    registerAccountUserDto.IsActive = true;
                 await _appUserRepository.AddRoleToUser(user, registerAccountUserDto.Role);
+                var res=await _unitOfWork.CommitAsync();
                 return new ServiceResponse<int> { Success = true, Data = 1 };
             }
             catch (Exception ex)
             {
-                throw ex;
+                 return await LogError<int>(ex, 0);
             }
         }
 

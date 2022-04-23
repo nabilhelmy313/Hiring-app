@@ -28,3 +28,18 @@ D:\work\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csp
 D:\work\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.dll
 D:\work\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\ref\Application.dll
 D:\work\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Application.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\ref\Application.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Domain.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Domain.pdb
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csproj.CopyComplete

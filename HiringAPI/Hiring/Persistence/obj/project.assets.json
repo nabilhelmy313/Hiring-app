@@ -2081,31 +2081,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nabil\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\Nabil\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\Persistence.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nabil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2113,11 +2107,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Application\\Application.csproj": {
-              "projectPath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Application\\Application.csproj"
+            "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Application\\Application.csproj"
             },
-            "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Domain\\Domain.csproj"
+            "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Domain\\Domain.csproj"
             }
           }
         }
@@ -2168,7 +2162,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities.General;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace Domain.Dto.General.Auth
     {
         public string Token { get; set; }
         public DateTime Expiration { get; set; }
-        public UserDto CurrentUser { get; set; }
-        public bool IsUserApproved { get; set; }
+        public ApplicationUser CurrentUser { get; set; }
+        public bool IsActive { get; set; }
     }
 
 }
