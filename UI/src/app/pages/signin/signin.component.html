@@ -3,15 +3,28 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
-                      <form class="signin-form">
+                      <form [formGroup]="loginForm" class="signin-form" (ngSubmit)="onSubmit()">
                           <div class="form-group">
                             <label>Enter Email</label>
-                            <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                            <input formControlName="userName" class="form-control" placeholder="Enter Your Email" [ngClass]="{
+                              'valid' :loginForm.get('userName')?.touched && loginForm.get('userName')?.valid,
+                              'invalid' : form['userName'].touched &&form['userName'].invalid
+                            }">
+                              <small class="text-danger mt-3" *ngIf="loginForm.get('userName')?.invalid && loginForm.get('userName')?.touched">
+                              email is required
+                              </small>
                           </div>
 
                           <div class="form-group">
                               <label>Enter Password</label>
-                              <input type="password" class="form-control" placeholder="Enter Your Password" required>
+                              <input type="password" formControlName="password" class="form-control" placeholder="Enter Your Password"
+                              [ngClass]="{
+                                'valid' : form['password'].touched && form['password'].valid,
+                                'invalid' : form['password'].touched &&form['password'].invalid
+                              }">
+                              <small class="text-danger mt-3" *ngIf="form['password'].invalid && form['password'].touched">
+
+                            </small>
                           </div>
 
                           <div class="signin-btn text-center">

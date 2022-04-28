@@ -1,3 +1,4 @@
+import { environment } from './../../../../environments/environment';
 import { LoginDto } from './../../../models/auth/loginDto';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -5,13 +6,13 @@ import { Observable } from 'rxjs';
 import { ServiceResponse } from 'src/app/models/general/ServiceResponse';
 import { TokenDto } from 'src/app/models/auth/TokenDto';
 import { RegisterDto } from 'src/app/models/auth/RegisterDto';
-
+const Url=environment.apiURL
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private _apiLogin=`${URL}Auth/Login`;
-  private _apiRegister=`${URL}Auth/Register`;
+  private _apiLogin=`${Url}Auth/Login`;
+  private _apiRegister=`${Url}Auth/Register`;
 
   constructor(private _httpClient:HttpClient) { }
 

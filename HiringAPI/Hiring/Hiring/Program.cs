@@ -90,7 +90,10 @@ builder.Services.AddAuthentication(options =>
 #endregion
 
 builder.Services.AddAutoMapper(typeof(MappingProfileBase));
-
+builder.Services.AddCors(c =>
+{
+    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+});
 #region Repositories
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
@@ -109,7 +112,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors(x => x
+               .AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

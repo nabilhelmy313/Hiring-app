@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { PublicHomeComponent } from './pages/public-home/public-home.component';
 import { PublicModule } from './pages/public.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PublicModule } from './pages/public.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule ,
     PublicModule
   ],
   providers: [],
