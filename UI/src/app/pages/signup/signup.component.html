@@ -3,15 +3,22 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
-        <form class="signup-form">
+        <form class="signup-form"  [formGroup]="signupForm"  (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label>Enter Email</label>
             <input
               type="email"
               class="form-control"
               placeholder="Enter Your Email"
-              required
+              formControlName="email"
+              [ngClass]="{
+                'valid' :signupForm.get('email')?.touched && signupForm.get('email')?.valid,
+                'invalid' : form['email'].touched &&form['email'].invalid}"
             />
+            <small class="text-danger mt-3" *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+              email is required
+              </small>
+
           </div>
 
           <div class="form-group">
@@ -20,15 +27,35 @@
               type="password"
               class="form-control"
               placeholder="Enter Your Password"
-              required
+              formControlName="password"
+              [ngClass]="{
+                'valid' : form['password'].touched && form['password'].valid,
+                'invalid' : form['password'].touched &&form['password'].invalid
+              }"
             />
+            <small class="text-danger mt-3" *ngIf="form['password'].invalid && form['password'].touched">
+              password is required
+          </small>
+          </div>
+          <div class="form-group">
+            <label>confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+              formControlName="confirmPassword"
+
+            />
+            <small class="text-danger mt-3" *ngIf="form['confirmPassword'].invalid && form['confirmPassword'].touched">
+              password dosn't match
+          </small>
           </div>
           <div class="form-group">
             <label>role</label>
             <div class="col-lg-3">
-              <select class="category">
-                <option value="1">Employee</option>
-                <option value="2">Employer</option>
+              <select class="category" formControlName="role">
+                <option value="Employee">Employee</option>
+                <option value="Employer">Employer</option>
               </select>
             </div>
           </div>

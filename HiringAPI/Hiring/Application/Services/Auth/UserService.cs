@@ -80,7 +80,7 @@ namespace Application.Services.Auth
                     registerAccountUserDto.IsActive = true;
                 await _appUserRepository.AddRoleToUser(user, registerAccountUserDto.Role);
                 var res=await _unitOfWork.CommitAsync();
-                return new ServiceResponse<int> { Success = true, Data = 1 };
+                return new ServiceResponse<int> { Success = true, Data = 1,Message="Your are Registered Succsfully" };
             }
             catch (Exception ex)
             {

@@ -3,6 +3,7 @@ using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Repositories.General.Auth;
 using Application.Interfaces.Services.General;
 using Application.Services.Auth;
+using Application.Services.General;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using Persistence.Repositories.Auth;
+using Persistence.Repositories.General;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -97,11 +99,13 @@ builder.Services.AddCors(c =>
 #region Repositories
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
+builder.Services.AddScoped<IAttachmentRepository, AttachmentRepository>();
 
 #endregion
 
 #region Services
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IFileService, FileService>();
 #endregion
 
 var app = builder.Build();

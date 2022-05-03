@@ -15,5 +15,6 @@ namespace Persistence
         {
 
         }
+        public DbSet<Attachment> Attachments { get; set; }
     }
 }

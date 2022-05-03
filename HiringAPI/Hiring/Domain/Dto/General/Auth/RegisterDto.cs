@@ -10,12 +10,14 @@ namespace Domain.Dto.General.Auth
 {
     public class RegisterDto
     {
+        [Required(ErrorMessage = "Email is Requried")]
+        [EmailAddress(ErrorMessage = "Email dosn't match")]
         public string? Email { get; set; }
         [Required(ErrorMessage = "Password is Requried")]
         [ValidatePassword()]
         public string? Password { get; set; }
         [Required]
-        [Compare("Password", ErrorMessage = "Not Match")]
+        [Compare("Password", ErrorMessage = "Password Not Match")]
         public string? ConfirmPassword { get; set; }
         [Required]
         public string? Role { get; set; }
