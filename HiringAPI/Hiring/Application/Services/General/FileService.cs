@@ -1,7 +1,9 @@
 ﻿using Application.Common;
+using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Services.General;
 using Application.Resources;
 using AutoMapper;
+using Domain.Dto.General;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -19,7 +21,7 @@ namespace Application.Services.General
         private readonly IMapper _mapper;
         private IHostingEnvironment Environment;
 
-        public FileService(SettingsModel _settingsModel,
+        public FileService(
             IAttachmentRepository attachmentRepository, IMapper mapper, IHostingEnvironment _Environment)
         {
             _attachmentRepository = attachmentRepository;
@@ -28,18 +30,14 @@ namespace Application.Services.General
         }
         public async Task<KeyValuePair<bool, string>> UploadFile(Guid rowId, Guid? scondRowId, List<IFormFile> UploadFiles, string TableName, string fileTypeCode, string FolderName, int fileMaxSize = 200000)
         {
-            //if (!_keys.AllowRegister)
-            //    return new KeyValuePair<bool, string>();
             string message = "";
             if (UploadFiles.Count == 0)
-                return new KeyValuePair<bool, string>(false, CultureHelper.GetResourceMessage(CommonResource.ResourceManager, nameof(CommonResource.Profilepicturehasnotbeenuploaded)));
+                return new KeyValuePair<bool, string>(false, CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.picturehasnotbeenuploaded)));
 
             try
             {
                 for (int i = 0; i < UploadFiles.Count; i++)
                 {
-                    //if (!CheckFile(UploadFiles[i], out message, fileMaxSize))
-                    //    return new KeyValuePair<bool, string>(false, message);
                     #region set attachment model
                     var model = new AttachmentDto()
                     {
@@ -52,13 +50,6 @@ namespace Application.Services.General
                         MIMEType = UploadFiles[i].ContentType,
                         TableName = TableName
                     };
-
-                    //if (MemiTypes.GetTypeByMemi(model.MIMEType).ToString()!= fileTypeCode )
-                    //    return new KeyValuePair<bool, string>(false, CultureHelper.GetResourceMessage(CommonResource.ResourceManager, nameof(CommonResource.Supportedextensions)));
-
-                    //model.FilePath = $"\\Moltaqa\\{model.Id.ToString() + model.FileExtension}";
-                    //string wwwPath = this.Environment.WebRootPath;
-                    //string contentPath = this.Environment.ContentRootPath;
 
                     string path = Path.Combine(this.Environment.WebRootPath, FolderName);
                     if (!Directory.Exists(path))

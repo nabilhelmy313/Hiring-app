@@ -226,3 +226,4 @@ C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Hiring\obj\Debug\net6.0\scopedcss\bundle\Hiring.styles.css
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Hiring\obj\Debug\net6.0\Hiring.csproj.CopyComplete
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Hiring\obj\Debug\net6.0\Hiring.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Hiring\bin\Debug\net6.0\fr\Application.resources.dll

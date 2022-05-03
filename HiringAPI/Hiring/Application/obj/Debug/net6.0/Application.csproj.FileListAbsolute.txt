@@ -43,3 +43,9 @@ C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Domain.dll
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\Domain.pdb
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\bin\Debug\net6.0\fr\Application.resources.dll
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.Resources.Resource.du.resources
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.Resources.Resource.resources
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.Resources.Resource.fr.resources
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\Application.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Application\obj\Debug\net6.0\fr\Application.resources.dll

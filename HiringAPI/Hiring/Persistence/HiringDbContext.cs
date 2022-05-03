@@ -1,4 +1,5 @@
-﻿using Domain.Entities.General;
+﻿using Domain.Entities;
+using Domain.Entities.General;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,5 +17,6 @@ namespace Persistence
 
         }
         public DbSet<Attachment> Attachments { get; set; }
+        public DbSet<JobCategory> JobCategories{ get; set; }
     }
 }
