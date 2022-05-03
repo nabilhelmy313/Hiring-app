@@ -12,5 +12,6 @@ namespace Domain.Entities.General
         [Key]
         public Guid Id { get; set; }
         public bool Is_Deleted { get; set; }
+        public DateTime Created_Date { get; set; } = DateTime.Now;
     }
 }
