@@ -61,11 +61,29 @@ namespace Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You Should Enter Data.
+        /// </summary>
+        internal static string DataIsNull {
+            get {
+                return ResourceManager.GetString("DataIsNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Picture has not been uploaded.
         /// </summary>
         internal static string picturehasnotbeenuploaded {
             get {
                 return ResourceManager.GetString("picturehasnotbeenuploaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Saved Successfully.
+        /// </summary>
+        internal static string SavedSuccessfully {
+            get {
+                return ResourceManager.GetString("SavedSuccessfully", resourceCulture);
             }
         }
         

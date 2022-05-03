@@ -1,6 +1,7 @@
 using Application;
 using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Repositories.General.Auth;
+using Application.Interfaces.Repositories.Jobs;
 using Application.Interfaces.Services.General;
 using Application.Services.Auth;
 using Application.Services.General;
@@ -12,6 +13,7 @@ using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using Persistence.Repositories.Auth;
 using Persistence.Repositories.General;
+using Persistence.Repositories.Job;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -100,6 +102,7 @@ builder.Services.AddCors(c =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 builder.Services.AddScoped<IAttachmentRepository, AttachmentRepository>();
+builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
 
 #endregion
 
