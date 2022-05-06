@@ -13,5 +13,11 @@ namespace Domain.Common
             public const string Login = "Auth/Login";
             public const string Register = "Auth/Register";
         }
+        public static class AdminJobCategory
+        {
+            public const string CreateUpdateCategory = "AdminJobCategory/CreateUpdateCategory";
+            public const string DeleteJobCategory = "AdminJobCategory/DeleteJobCategory";
+
+        }
     }
 }

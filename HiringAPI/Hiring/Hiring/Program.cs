@@ -3,8 +3,10 @@ using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Repositories.General.Auth;
 using Application.Interfaces.Repositories.Jobs;
 using Application.Interfaces.Services.General;
+using Application.Interfaces.Services.Job;
 using Application.Services.Auth;
 using Application.Services.General;
+using Application.Services.Job;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -109,6 +111,7 @@ builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
 #region Services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IAdminJobCategoryService, AdminJobCategoryService>();
 #endregion
 
 var app = builder.Build();

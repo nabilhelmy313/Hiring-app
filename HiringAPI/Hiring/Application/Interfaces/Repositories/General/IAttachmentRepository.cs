@@ -9,5 +9,6 @@ namespace Application.Interfaces.Repositories.General
 {
     public interface IAttachmentRepository:IBaseRepository<Attachment>
     {
+        void PhysiscalDelete(Guid rowId);
     }
 }

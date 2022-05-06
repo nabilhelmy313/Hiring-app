@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DataIsNull" xml:space="preserve">
+    <value>You Should Enter Data</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>Deleted Successfully</value>
+  </data>
   <data name="picturehasnotbeenuploaded" xml:space="preserve">
     <value>Picture has not been uploaded</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>Data Saved Successfully</value>
   </data>
   <data name="UploadFileSizeValidMSG" xml:space="preserve">
     <value>Upload File Size Not Valid</value>

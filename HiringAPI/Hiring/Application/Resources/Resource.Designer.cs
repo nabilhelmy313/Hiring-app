@@ -70,6 +70,15 @@ namespace Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deleted Successfully.
+        /// </summary>
+        internal static string DeletedSuccessfully {
+            get {
+                return ResourceManager.GetString("DeletedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Picture has not been uploaded.
         /// </summary>
         internal static string picturehasnotbeenuploaded {

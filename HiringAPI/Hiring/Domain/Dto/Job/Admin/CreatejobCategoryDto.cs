@@ -9,6 +9,7 @@ namespace Domain.Dto.Job.Admin
 {
     public class CreatejobCategoryDto
     {
+        public Guid? Id { get; set; }
         public string Title_En { get; set; }
         public string Title_Fr { get; set; }
         public string Title_du { get; set; }

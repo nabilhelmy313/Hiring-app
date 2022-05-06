@@ -14,7 +14,7 @@ namespace Application.Interfaces.Repositories.General
         void Create(T obj);
         Task CreateRangeAsync(IEnumerable<T> objList);
         //void Delete(Action<T> deleteFunction, Expression<Func<T, bool>> predicate = null);
-        void Delete(object id);
+        void Delete(Guid id);
         void Update(T obj, params string[] excludedFields);
 
     }

@@ -57,14 +57,8 @@ namespace Persistence
             await _dbContext.AddRangeAsync(objList);
         }
 
-        //public virtual void Delete(Action<T> deleteFunction, Expression<Func<T, bool>> predicate = null)
-        //{
-        //    _dbContext.Set<T>().Where(predicate).ForEachAsync(delegate (T item)
-        //    {
-        //        deleteFunction(item);
-        //    });
-        //}
-        public virtual void Delete(object id)
+      
+        public virtual void Delete(Guid id)
         {
             T existing = table.Find(id);
             existing.Is_Deleted = true;
