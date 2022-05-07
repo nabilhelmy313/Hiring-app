@@ -1,7 +1,6 @@
 ﻿using Application.Interfaces.Services.Job;
 using Domain.Common;
 using Domain.Dto.Job.Admin;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hiring.Controllers.Admin
@@ -28,5 +27,7 @@ namespace Hiring.Controllers.Admin
             var response = await _adminJobCategoryService.DeleteJobCategory(id);
             return Ok(response);
         }
+
+        
     }
 }

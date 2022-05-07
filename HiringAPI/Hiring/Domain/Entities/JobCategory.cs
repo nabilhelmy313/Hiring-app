@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class JobCategory:BaseEntity
+    public class JobCategory : BaseEntity
     {
         public string Title_En { get; set; }
         public string Title_Fr { get; set; }
         public string Title_du { get; set; }
-
+        public ICollection<Job> Jobs { get; set; }
     }
 }

@@ -18,5 +18,6 @@ namespace Persistence
         }
         public DbSet<Attachment> Attachments { get; set; }
         public DbSet<JobCategory> JobCategories{ get; set; }
+        public DbSet<Job> Jobs { get; set; }
     }
 }
