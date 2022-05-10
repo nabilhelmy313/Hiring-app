@@ -1,0 +1,54 @@
+<div class="account-details">
+  <h3>Job Categroy</h3>
+  <form class="basic-info" [formGroup]="CategoryForm"  (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Title English</label>
+          <input type="text" class="form-control" formControlName="title_En" placeholder="Title English">
+          <small class="text-danger mt-3" *ngIf="CategoryForm.get('title_En')?.invalid && CategoryForm.get('title_En')?.touched">
+            Title English is required
+          </small>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Title French</label>
+          <input type="text" class="form-control" formControlName="title_Fr" placeholder="Title French">
+          <small class="text-danger mt-3" *ngIf="CategoryForm.get('title_Fr')?.invalid && CategoryForm.get('title_Fr')?.touched">
+            Title French is required
+          </small>
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Title Dutch</label>
+          <input type="text" class="form-control" formControlName="title_du"  placeholder="Title Dutch">
+          <small class="text-danger mt-3" *ngIf="CategoryForm.get('title_du')?.invalid && CategoryForm.get('title_du')?.touched">
+            Title Dutch is required
+          </small>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Category Picture</label>
+          <input type="file" class="form-control"(change)="chooseFile($event)" formControlName="categoryPic"  placeholder="Title Dutch">
+          <small class="text-danger mt-3" *ngIf="CategoryForm.get('categoryPic')?.invalid && CategoryForm.get('categoryPic')?.touched">
+            Picture is required
+          </small>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <button type="submit" class="account-btn"  *ngIf="!CategoryForm.invalid">Save</button>
+        <button type="button" class="account-btn-disabled" *ngIf="CategoryForm.invalid">Save</button>
+      </div>
+    </div>
+  </form>
+
+
+</div>

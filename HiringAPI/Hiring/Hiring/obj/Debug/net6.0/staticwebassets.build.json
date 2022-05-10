@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "/1DSsOZjJlQgmR7ISiYPwNN0Nzyy1gnTOSVc7G9CQ5I=",
+  "Hash": "Gzpn6mn1UBG1bSJW7jbw+Ry5YlZn8tv3lR7NE325fys=",
   "Source": "Hiring",
   "BasePath": "_content/Hiring",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Hiring\\wwwroot",
+      "Source": "Hiring",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "BasePath": "_content/Hiring",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activity_monitor.png",
+      "SourceId": "Hiring",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "BasePath": "_content/Hiring",
+      "RelativePath": "JobCategory/activity_monitor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JobCategory\\activity_monitor.png"
+    }
+  ]
 }

@@ -17,7 +17,7 @@ namespace Domain.Common
         {
             public const string CreateUpdateCategory = "AdminJobCategory/CreateUpdateCategory";
             public const string DeleteJobCategory = "AdminJobCategory/DeleteJobCategory";
-
+            public const string GetAllJobCategory = "AdminJobCategory/GetAllJobCategory";
         }
     }
 }

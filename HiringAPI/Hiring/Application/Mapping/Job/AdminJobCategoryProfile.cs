@@ -15,6 +15,10 @@ namespace Application.Mapping.Job
             CreateMap<JobCategory,CreatejobCategoryDto>()
                 .ForMember(a=>a.CategoryPic,a=>a.Ignore())
                 .ReverseMap();
+            CreateMap<JobCategory, GetJobCategoriesDto>()
+               .ForMember(a => a.CategoryPic, a => a.Ignore())
+               .ReverseMap();
+
         }
     }
 }

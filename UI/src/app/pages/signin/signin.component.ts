@@ -12,8 +12,7 @@ export class SigninComponent implements OnInit {
   loading: boolean = false;
   submitted: boolean = false;
   loginForm!: FormGroup;
-  error: string = '';
-  direction: string = "";
+
   constructor(private _authService: AuthService,
     private _sweetalertService: SweetalertService,
     private formBuilder: FormBuilder,

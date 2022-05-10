@@ -15,7 +15,7 @@ namespace Hiring.Controllers.Admin
         }
         [HttpPost]
         [Route(RouteClass.AdminJobCategory.CreateUpdateCategory)]
-        public async Task<IActionResult> CreateUpdateCategory([FromBody] CreatejobCategoryDto createjobCategoryDto)
+        public async Task<IActionResult> CreateUpdateCategory([FromForm] CreatejobCategoryDto createjobCategoryDto)
         {
             var response = await _adminJobCategoryService.CreateJobCategory(createjobCategoryDto);
             return Ok(response);
@@ -27,7 +27,15 @@ namespace Hiring.Controllers.Admin
             var response = await _adminJobCategoryService.DeleteJobCategory(id);
             return Ok(response);
         }
+        [HttpGet]
+        [Route(RouteClass.AdminJobCategory.GetAllJobCategory)]
+        public async Task<IActionResult> GetAllJobCategory()
+        {
+            var response = await _adminJobCategoryService.GetJobCategory();
+            return Ok(response);
+        }
 
-        
+
+
     }
 }

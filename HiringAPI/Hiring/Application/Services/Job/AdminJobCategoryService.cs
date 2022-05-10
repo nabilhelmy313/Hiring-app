@@ -25,7 +25,8 @@ namespace Application.Services.Job
         private readonly IAttachmentRepository _attachmentRepository;
 
         public AdminJobCategoryService(IJobCategoryRepository jobCategoryRepository,
-            IMapper mapper, IUnitOfWork unitOfWork, IFileService fileService,IAttachmentRepository attachmentRepository)
+            IMapper mapper, IUnitOfWork unitOfWork, IFileService fileService, 
+            IAttachmentRepository attachmentRepository )
         {
             _jobCategoryRepository = jobCategoryRepository;
             _mapper = mapper;
@@ -45,7 +46,7 @@ namespace Application.Services.Job
                     category.Title_du = createjobCategoryDto.Title_du;
                     category.Title_En = createjobCategoryDto.Title_En;
                     category.Title_Fr = createjobCategoryDto.Title_Fr;
-                    var attach =_attachmentRepository.FindByID(map.Id);
+                    var attach = _attachmentRepository.FindByID(map.Id);
                     if (attach.File_Name != createjobCategoryDto.CategoryPic.FileName)
                     {
                         _attachmentRepository.PhysiscalDelete(map.Id);
@@ -80,13 +81,38 @@ namespace Application.Services.Job
                 return new ServiceResponse<int>
                 {
                     Data = res,
-                    Success=true,
+                    Success = true,
                     Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.DeletedSuccessfully)),
                 };
             }
             catch (Exception ex)
             {
                 return await LogError(ex, 0);
+            }
+        }
+
+        public async Task<ServiceResponse<List<GetJobCategoriesDto>>> GetJobCategory()
+        {
+            try
+            {
+                var jobCategories = await _jobCategoryRepository.GetAllAsync();
+                var map = _mapper.Map<List<GetJobCategoriesDto>>(jobCategories);
+                for (int i = 0; i < map.Count; i++)
+                {
+                    var x = _attachmentRepository.FindByID(map[i].Id).File_Path;
+                    //var p = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}/{x}";
+                    map[i].CategoryPic =   x;
+                }
+                return new ServiceResponse<List<GetJobCategoriesDto>>
+                {
+                    Data = map,
+                    Success = true
+                };
+            }
+            catch (Exception ex)
+            {
+
+                return await LogError<List< GetJobCategoriesDto>> (ex, null);
             }
         }
     }
