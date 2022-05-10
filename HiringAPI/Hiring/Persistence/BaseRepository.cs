@@ -60,7 +60,7 @@ namespace Persistence
       
         public virtual void Delete(Guid id)
         {
-            T existing = table.Find(id);
+            T existing = _dbContext.Set<T>().Find(id);
             existing.Is_Deleted = true;
         }
 

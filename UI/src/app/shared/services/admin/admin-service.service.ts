@@ -13,6 +13,7 @@ const Url=environment.apiURL
 export class AdminServiceService {
   private _apiCreateUpdateCategory=`${Url}AdminJobCategory/CreateUpdateCategory`;
   private _apiGetAllJobCategory=`${Url}AdminJobCategory/GetAllJobCategory`;
+  private _apiDeleteJobCategory=`${Url}AdminJobCategory/DeleteJobCategory`;
   constructor(private _httpClient:HttpClient) { }
 
   CreateUpdateCategory(createjobCategoryDto:CreatejobCategoryDto):Observable<ServiceResponse<number>>
@@ -29,5 +30,9 @@ export class AdminServiceService {
   }
   GetJobCategory():Observable<ServiceResponse<GetJobCategoriesDto[]>>{
     return this._httpClient.get<ServiceResponse<GetJobCategoriesDto[]>>(this._apiGetAllJobCategory)
+  }
+  del(id:string):Observable<ServiceResponse<number>>{
+    return this._httpClient.put<ServiceResponse<number>>(this._apiDeleteJobCategory+"?id="+id,null)
+
   }
 }

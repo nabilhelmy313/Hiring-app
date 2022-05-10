@@ -49,6 +49,27 @@
       </div>
     </div>
   </form>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title English</th>
+        <th scope="col">Title French</th>
+        <th scope="col">Title Dutch</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of getJobCategoriesDto; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.titleEn}}</td>
+        <td>{{item.titleFr}}</td>
+        <td>{{item.titledu}}</td>
+        <td><button class="btn btn-outline-danger" (click)="del(item.id)">delete</button></td>
+        <td><img src="{{URL}}{{item.categoryPic}}" alt=""></td>
+      </tr>
+
+    </tbody>
+  </table>
 
 
 </div>

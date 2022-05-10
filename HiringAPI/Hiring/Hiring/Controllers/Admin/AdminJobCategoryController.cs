@@ -20,9 +20,9 @@ namespace Hiring.Controllers.Admin
             var response = await _adminJobCategoryService.CreateJobCategory(createjobCategoryDto);
             return Ok(response);
         }
-        [HttpDelete]
-        [Route(RouteClass.AdminJobCategory.CreateUpdateCategory)]
-        public async Task<IActionResult> DeleteJobCategory([FromBody] Guid id)
+        [HttpPut]
+        [Route(RouteClass.AdminJobCategory.DeleteJobCategory)]
+        public async Task<IActionResult> DeleteJobCategory([FromQuery] Guid id)
         {
             var response = await _adminJobCategoryService.DeleteJobCategory(id);
             return Ok(response);

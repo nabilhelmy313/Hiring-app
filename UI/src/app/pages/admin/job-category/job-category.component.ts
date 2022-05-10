@@ -67,6 +67,8 @@ export class JobCategoryComponent implements OnInit {
       .subscribe((res) => {
         if (res.success) {
           this._sweetalertService.RunAlert(res.message, true);
+          this.CategoryForm.value==null;
+          this.GetJobCategory();
         } else {
           this._sweetalertService.RunAlert(res.message, false);
         }
@@ -77,6 +79,19 @@ export class JobCategoryComponent implements OnInit {
       if(res.success){
         this.getJobCategoriesDto = res.data;
         console.log(res.data)
+      }
+    });
+  }
+  del(id:string){
+    console.log(id);
+
+    this._adminService.del(id).subscribe((res) => {
+      if(res.success){
+        this._sweetalertService.RunAlert(res.message, true);
+        this.GetJobCategory();
+      }else{
+        this._sweetalertService.RunAlert(res.message, false);
+
       }
     });
   }

@@ -77,6 +77,7 @@ namespace Application.Services.Job
             try
             {
                 _jobCategoryRepository.Delete(id);
+                _attachmentRepository.PhysiscalDelete(id);
                 var res = await _unitOfWork.CommitAsync();
                 return new ServiceResponse<int>
                 {
@@ -95,11 +96,11 @@ namespace Application.Services.Job
         {
             try
             {
-                var jobCategories = await _jobCategoryRepository.GetAllAsync();
+                var jobCategories = await _jobCategoryRepository.GetAllAsync(a=>!a.Is_Deleted);
                 var map = _mapper.Map<List<GetJobCategoriesDto>>(jobCategories);
                 for (int i = 0; i < map.Count; i++)
                 {
-                    var x = _attachmentRepository.FindByID(map[i].Id).File_Path;
+                    var x =(await _attachmentRepository.GetAllAsync(p=>p.Row_Id==map[i].Id.ToString())).FirstOrDefault().File_Path;
                     //var p = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}/{x}";
                     map[i].CategoryPic =   x;
                 }
