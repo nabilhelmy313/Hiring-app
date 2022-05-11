@@ -4,4 +4,6 @@ export interface RegisterDto {
   confirmPassword: string | null;
   role: string | null;
   isActive: boolean;
+  companyName: string;
+  phoneNumber: string;
 }

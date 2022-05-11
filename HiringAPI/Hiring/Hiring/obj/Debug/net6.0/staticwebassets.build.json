@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/cxJRiHVeANiX/Q/bUXlZf4YOFkQs48ndhBS1NFxK/E=",
+  "Hash": "Pk48oZc9u4uiLittxANOpvpstctt7nfIQDS3cRnn3SE=",
   "Source": "Hiring",
   "BasePath": "_content/Hiring",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Hiring\\wwwroot",
       "Source": "Hiring",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\3.jpg",
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\3.jpg",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/3.jpg",
       "AssetKind": "All",
@@ -34,10 +34,27 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activity_monitor.png",
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activinspire.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "BasePath": "_content/Hiring",
+      "RelativePath": "JobCategory/activinspire.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JobCategory\\activinspire.png"
+    },
+    {
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activity_monitor.png",
+      "SourceId": "Hiring",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/activity_monitor.png",
       "AssetKind": "All",
@@ -51,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\activity_monitor.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\icons8-france-80.png",
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\icons8-france-80.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/icons8-france-80.png",
       "AssetKind": "All",
@@ -68,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\icons8-france-80.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
+      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Nabil\\MNSR Hiring App\\Hiring\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
       "AssetKind": "All",
