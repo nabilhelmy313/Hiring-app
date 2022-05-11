@@ -72,12 +72,15 @@ namespace Application.Services.Auth
                 #endregion
                 var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
                 user.UserName = registerAccountUserDto.Email;
-                var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
-                if (!result.Succeeded) return new ServiceResponse<int> { Success = false, Message = string.Join(Environment.NewLine, result.Errors.Select(x => x.Description)) };
                 if (registerAccountUserDto.Role == RolesName.Employer.ToString())
+                {
                     registerAccountUserDto.IsActive = false;
+                    user.CompanyName= registerAccountUserDto.CompanyName;
+                }
                 else
                     registerAccountUserDto.IsActive = true;
+                var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
+                if (!result.Succeeded) return new ServiceResponse<int> { Success = false, Message = string.Join(Environment.NewLine, result.Errors.Select(x => x.Description)) };
                 await _appUserRepository.AddRoleToUser(user, registerAccountUserDto.Role);
                 var res=await _unitOfWork.CommitAsync();
                 return new ServiceResponse<int> { Success = true, Data = 1,Message="Your are Registered Succsfully" };

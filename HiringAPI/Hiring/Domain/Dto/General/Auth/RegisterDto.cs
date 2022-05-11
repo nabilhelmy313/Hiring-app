@@ -22,5 +22,7 @@ namespace Domain.Dto.General.Auth
         [Required]
         public string? Role { get; set; }
         public bool IsActive { get; set; }
+        public string CompanyName { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
