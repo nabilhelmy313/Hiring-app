@@ -33,6 +33,5 @@ export class AdminServiceService {
   }
   del(id:string):Observable<ServiceResponse<number>>{
     return this._httpClient.put<ServiceResponse<number>>(this._apiDeleteJobCategory+"?id="+id,null)
-
   }
 }

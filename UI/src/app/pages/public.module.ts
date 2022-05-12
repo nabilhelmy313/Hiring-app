@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JobCategoryComponent } from './admin/job-category/job-category.component';
 import { AdminProfileSideComponent } from './admin/admin-profile-side/admin-profile-side.component';
 import { AdminPageComponent } from './admin/admin-page/admin-page.component';
+import { CompanyRequestsComponent } from './admin/company-requests/company-requests.component';
 
 
 
@@ -16,6 +17,7 @@ import { AdminPageComponent } from './admin/admin-page/admin-page.component';
     JobCategoryComponent,
     AdminProfileSideComponent,
     AdminPageComponent,
+    CompanyRequestsComponent,
   ],
   imports: [
     CommonModule,
