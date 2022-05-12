@@ -6,7 +6,7 @@ using Application.Interfaces.Services.General;
 using Application.Interfaces.Services.Job;
 using Application.Services.Auth;
 using Application.Services.General;
-using Application.Services.Job;
+using Application.Services.Admin;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;

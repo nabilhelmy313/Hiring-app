@@ -14,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Services.Job
+namespace Application.Services.Admin
 {
     public class AdminJobCategoryService : ServiceBase, IAdminJobCategoryService
     {

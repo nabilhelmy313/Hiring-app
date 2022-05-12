@@ -34,8 +34,5 @@ namespace Hiring.Controllers.Admin
             var response = await _adminJobCategoryService.GetJobCategory();
             return Ok(response);
         }
-
-
-
     }
 }

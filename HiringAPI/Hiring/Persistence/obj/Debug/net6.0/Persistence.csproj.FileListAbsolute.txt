@@ -57,3 +57,23 @@ C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Nabil\MNSR Hiring App\Hiring\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\fr\Application.resources.dll
 D:\work\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\fr\Application.resources.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Application.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Domain.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Application.pdb
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\bin\Debug\net6.0\fr\Application.resources.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
+C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Persistence\obj\Debug\net6.0\ref\Persistence.dll
