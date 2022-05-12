@@ -19,5 +19,11 @@ namespace Domain.Common
             public const string DeleteJobCategory = "AdminJobCategory/DeleteJobCategory";
             public const string GetAllJobCategory = "AdminJobCategory/GetAllJobCategory";
         }
+
+        public static class Admin
+        {
+            public const string GetEmployers = "AcceptOrRefuseEmolyer/GetEmployers";
+            public const string UpdateActivationOfUser = "AcceptOrRefuseEmolyer/UpdateActivationOfUser";
+        }
     }
 }

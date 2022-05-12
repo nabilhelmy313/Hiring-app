@@ -117,17 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Added" xml:space="preserve">
+    <value>Added Successfully</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved Successfully</value>
+  </data>
   <data name="DataIsNull" xml:space="preserve">
     <value>You Should Enter Data</value>
   </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Deleted Succesfully</value>
+  </data>
   <data name="DeletedSuccessfully" xml:space="preserve">
     <value>Deleted Successfully</value>
+  </data>
+  <data name="NotActive" xml:space="preserve">
+    <value>this User is Not Acive</value>
+  </data>
+  <data name="NotAdded" xml:space="preserve">
+    <value>Add  Failed</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Not Authorized</value>
+  </data>
+  <data name="NotDeleted" xml:space="preserve">
+    <value>Delete Failed</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not Found  Data</value>
+  </data>
+  <data name="NotUpdated" xml:space="preserve">
+    <value>Update Failed</value>
   </data>
   <data name="picturehasnotbeenuploaded" xml:space="preserve">
     <value>Picture has not been uploaded</value>
   </data>
   <data name="SavedSuccessfully" xml:space="preserve">
     <value>Data Saved Successfully</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Updated Successfully</value>
   </data>
   <data name="UploadFileSizeValidMSG" xml:space="preserve">
     <value>Upload File Size Not Valid</value>

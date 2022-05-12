@@ -61,6 +61,24 @@ namespace Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Added Successfully.
+        /// </summary>
+        internal static string Added {
+            get {
+                return ResourceManager.GetString("Added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Approved Successfully.
+        /// </summary>
+        internal static string Approved {
+            get {
+                return ResourceManager.GetString("Approved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You Should Enter Data.
         /// </summary>
         internal static string DataIsNull {
@@ -70,11 +88,74 @@ namespace Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deleted Succesfully.
+        /// </summary>
+        internal static string Deleted {
+            get {
+                return ResourceManager.GetString("Deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Deleted Successfully.
         /// </summary>
         internal static string DeletedSuccessfully {
             get {
                 return ResourceManager.GetString("DeletedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to this User is Not Acive.
+        /// </summary>
+        internal static string NotActive {
+            get {
+                return ResourceManager.GetString("NotActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add  Failed.
+        /// </summary>
+        internal static string NotAdded {
+            get {
+                return ResourceManager.GetString("NotAdded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not Authorized.
+        /// </summary>
+        internal static string NotAuthorized {
+            get {
+                return ResourceManager.GetString("NotAuthorized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Failed.
+        /// </summary>
+        internal static string NotDeleted {
+            get {
+                return ResourceManager.GetString("NotDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not Found  Data.
+        /// </summary>
+        internal static string NotFound {
+            get {
+                return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Failed.
+        /// </summary>
+        internal static string NotUpdated {
+            get {
+                return ResourceManager.GetString("NotUpdated", resourceCulture);
             }
         }
         
@@ -93,6 +174,15 @@ namespace Application.Resources {
         internal static string SavedSuccessfully {
             get {
                 return ResourceManager.GetString("SavedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updated Successfully.
+        /// </summary>
+        internal static string Updated {
+            get {
+                return ResourceManager.GetString("Updated", resourceCulture);
             }
         }
         

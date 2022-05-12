@@ -3,7 +3,7 @@ using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Repositories.General.Auth;
 using Application.Interfaces.Repositories.Jobs;
 using Application.Interfaces.Services.General;
-using Application.Interfaces.Services.Job;
+using Application.Interfaces.Services.Admin;
 using Application.Services.Auth;
 using Application.Services.General;
 using Application.Services.Admin;
