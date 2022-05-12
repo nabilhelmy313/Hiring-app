@@ -74,5 +74,9 @@ namespace Persistence.Repositories.Auth
         {
             await _userManager.AddToRoleAsync(user, Role);
         }
+
+       
+
+
     }
 }

@@ -1,5 +1,7 @@
-﻿using Domain.Dto.Job.Admin;
+﻿using Domain.Dto.Admin;
+using Domain.Dto.Job.Admin;
 using Domain.Entities;
+using Domain.Entities.General;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +20,13 @@ namespace Application.Mapping.Job
             CreateMap<JobCategory, GetJobCategoriesDto>()
                .ForMember(a => a.CategoryPic, a => a.Ignore())
                .ReverseMap();
+
+
+
+            CreateMap<ApplicationUser, GetEmployerInfoDto>()
+                .ReverseMap() ;
+               
+                 
 
         }
     }

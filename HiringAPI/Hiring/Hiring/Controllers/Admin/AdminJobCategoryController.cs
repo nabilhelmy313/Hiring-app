@@ -1,4 +1,4 @@
-﻿using Application.Interfaces.Services.Job;
+﻿using Application.Interfaces.Services.Admin;
 using Domain.Common;
 using Domain.Dto.Job.Admin;
 using Microsoft.AspNetCore.Mvc;

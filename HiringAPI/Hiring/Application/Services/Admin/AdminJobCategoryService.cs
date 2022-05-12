@@ -2,7 +2,7 @@
 using Application.Interfaces.Repositories.General;
 using Application.Interfaces.Repositories.Jobs;
 using Application.Interfaces.Services.General;
-using Application.Interfaces.Services.Job;
+using Application.Interfaces.Services.Admin;
 using Application.Resources;
 using AutoMapper;
 using Domain.Dto.Job.Admin;
