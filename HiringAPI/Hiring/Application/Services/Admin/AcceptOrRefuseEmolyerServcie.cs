@@ -33,7 +33,7 @@ namespace Application.Services.Admin
         {
             try
             {
-                var users = await _userManager.GetUsersInRoleAsync(RoleName);
+                var users = await _appUserRepository.GetEmployers();
                 if (users == null) return new ServiceResponse<List<GetEmployerInfoDto>>() { Success = false, Data = null, Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.DataIsNull)) };
                 var Mapped = _mapper.Map<List<GetEmployerInfoDto>>(users);
                 return new ServiceResponse<List<GetEmployerInfoDto>>() { Success = true, Data = Mapped };

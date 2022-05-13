@@ -24,6 +24,7 @@ namespace Application.Mapping.Job
 
 
             CreateMap<ApplicationUser, GetEmployerInfoDto>()
+               .ForMember(a => a.UserId, a => a.MapFrom(a=>a.Id))
                 .ReverseMap() ;
                
                  

@@ -10,14 +10,14 @@ const Url=environment.apiURL
   providedIn: 'root'
 })
 export class EmployerRequestService {
-  private _apiGetEmployer=`${Url}AcceptOrRefuseEmolyer/GetEmployer`;
+  private _apiGetEmployer=`${Url}AcceptOrRefuseEmolyer/GetEmployers`;
   private _apiUpdateActivationOfUser=`${Url}AcceptOrRefuseEmolyer/UpdateActivationOfUser`;
 
   constructor(private _httpClient:HttpClient) { }
   GetEmployer(roleName:string):Observable<ServiceResponse<GetEmployerInfoDto[]>>{
     return this._httpClient.get<ServiceResponse<GetEmployerInfoDto[]>>(`${this._apiGetEmployer}?RoleName=${roleName}`)
   }
-  UpdateActivationOfUser():Observable<ServiceResponse<boolean>>{
-    return this._httpClient.put<ServiceResponse<boolean>>(this._apiUpdateActivationOfUser,null)
+  UpdateActivationOfUser(userId:string):Observable<ServiceResponse<boolean>>{
+    return this._httpClient.put<ServiceResponse<boolean>>(`${this._apiUpdateActivationOfUser}?UserId=${userId}`,null)
   }
 }

@@ -5,6 +5,22 @@
       <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
         <form class="signup-form"  [formGroup]="signupForm"  (ngSubmit)="onSubmit()">
           <div class="form-group">
+            <label>Enter Full Name</label>
+            <input
+              type="fullName"
+              class="form-control"
+              placeholder="Enter Your Full Name"
+              formControlName="fullName"
+              [ngClass]="{
+                'valid' :signupForm.get('fullName')?.touched && signupForm.get('fullName')?.valid,
+                'invalid' : form['fullName'].touched &&form['fullName'].invalid}"
+            />
+            <small class="text-danger mt-3" *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+              Full Name is required
+              </small>
+
+          </div>
+          <div class="form-group">
             <label>Enter Email</label>
             <input
               type="email"

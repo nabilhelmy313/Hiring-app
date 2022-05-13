@@ -113,6 +113,7 @@ builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IAdminJobCategoryService, AdminJobCategoryService>();
+builder.Services.AddScoped<IAcceptOrRefuseEmolyerServcie, AcceptOrRefuseEmolyerServcie>();
 #endregion
 
 var app = builder.Build();

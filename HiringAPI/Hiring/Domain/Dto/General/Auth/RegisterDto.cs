@@ -10,6 +10,8 @@ namespace Domain.Dto.General.Auth
 {
     public class RegisterDto
     {
+        [Required(ErrorMessage = "FullName is Requried")]
+        public string FullName { get; set; }
         [Required(ErrorMessage = "Email is Requried")]
         [EmailAddress(ErrorMessage = "Email dosn't match")]
         public string? Email { get; set; }

@@ -12,6 +12,8 @@ namespace Application.Interfaces.Repositories.General.Auth
         Task<TokenEntity> GetToken(string userName, string password, string topSecretKey, string issuer, string audience);
         Task<ApplicationUser> GetUserByEmail(string email);
         Task AddRoleToUser(ApplicationUser user, string Role);
-         
+        Task<List<ApplicationUser>> GetEmployers();
+
+
     }
 }

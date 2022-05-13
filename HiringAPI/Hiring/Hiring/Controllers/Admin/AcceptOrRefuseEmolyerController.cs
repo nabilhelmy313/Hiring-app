@@ -14,7 +14,8 @@ namespace Hiring.Controllers.Admin
 
         [HttpGet]
         [Route(RouteClass.Admin.GetEmployers)]
-        public async Task<IActionResult> GetEmployers(string RoleName) {
+        public async Task<IActionResult> GetEmployers(string RoleName) 
+        {
             var result =await _AcceptOrRefuseEmolyerServcie.GetEmployers(RoleName);
             return Ok( result);
         }
