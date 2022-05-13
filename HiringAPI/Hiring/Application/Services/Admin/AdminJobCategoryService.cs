@@ -5,7 +5,7 @@ using Application.Interfaces.Services.General;
 using Application.Interfaces.Services.Admin;
 using Application.Resources;
 using AutoMapper;
-using Domain.Dto.Job.Admin;
+using Domain.Dto.JobAdmin.Admin;
 using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using System;

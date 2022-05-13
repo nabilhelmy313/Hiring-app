@@ -1,6 +1,6 @@
 ﻿using Application.Interfaces.Services.Admin;
 using Domain.Common;
-using Domain.Dto.Job.Admin;
+using Domain.Dto.JobAdmin.Admin;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hiring.Controllers.Admin

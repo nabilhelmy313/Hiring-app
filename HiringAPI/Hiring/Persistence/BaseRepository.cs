@@ -27,13 +27,7 @@ namespace Persistence
                 return await _dbContext.Set<T>().Where(predicate).ToListAsync();
         }
 
-        public virtual List<T> GetAll(Expression<Func<T, bool>> predicate = null)
-        {
-            if (predicate == null)
-                return _dbContext.Set<T>().ToList();
-            else
-                return _dbContext.Set<T>().Where(predicate).ToList();
-        }
+    
 
         public Task<int> Count(Expression<Func<T, bool>> predicate = null) =>
                         predicate == null

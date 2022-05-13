@@ -1,5 +1,5 @@
 ﻿using Domain.Dto.Admin;
-using Domain.Dto.Job.Admin;
+using Domain.Dto.JobAdmin.Admin;
 using Domain.Entities;
 using Domain.Entities.General;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Mapping.Job
+namespace Application.Mapping.Admin
 {
     public class AdminJobCategoryProfile:MappingProfileBase
     {

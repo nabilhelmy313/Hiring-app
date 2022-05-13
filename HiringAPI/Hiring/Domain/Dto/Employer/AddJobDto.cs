@@ -1,8 +1,13 @@
-﻿using Domain.Entities.General;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Domain.Entities
+namespace Domain.Dto.Employer
 {
-    public class Job:BaseEntity
+    public class AddJobDto
     {
         public string JobTitle { get; set; }
         public DateTime ClosedDate { get; set; }
@@ -14,7 +19,6 @@ namespace Domain.Entities
         public string? Language { get; set; }
         public string? Salary { get; set; }
         public string? Website { get; set; }
-        public JobCategory  JobCategory { get; set; }
-
+        public Guid JobCategoryId{ get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Dto.Job.Admin
+namespace Domain.Dto.JobAdmin.Admin
 {
     public class GetJobCategoriesDto
     {
