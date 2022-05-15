@@ -77,8 +77,7 @@ namespace Persistence.Repositories.Auth
 
         public async Task<List<ApplicationUser>>GetEmployers()
         {
-            
-           var user=await _userManager.Users.Include(a=>a.UserRoles).Where(a => a.UserRoles == "Employer").ToListAsync();
+           var user=await _userManager.Users.Include(a=>a.UserRoles).ToListAsync();
             return user;
         }
 

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistence.Repositories.Job
+namespace Persistence.Repositories.Admin
 {
     public class JobCategoryRepository:BaseRepository<JobCategory>,IJobCategoryRepository
     {

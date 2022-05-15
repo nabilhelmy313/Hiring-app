@@ -96,7 +96,7 @@ namespace Application.Services.Admin
         {
             try
             {
-                var jobCategories = await _jobCategoryRepository.GetAllAsync(a=>!a.Is_Deleted);
+                var jobCategories = await _jobCategoryRepository.GetAllAsync();
                 var map = _mapper.Map<List<GetJobCategoriesDto>>(jobCategories);
                 for (int i = 0; i < map.Count; i++)
                 {

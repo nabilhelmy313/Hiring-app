@@ -13,7 +13,7 @@ namespace Hiring.Controllers.Admin
         }
 
         [HttpGet]
-        [Route(RouteClass.Admin.GetEmployers)]
+        [Route(RouteClass.AdminRoute.GetEmployers)]
         public async Task<IActionResult> GetEmployers(string RoleName) 
         {
             var result =await _AcceptOrRefuseEmolyerServcie.GetEmployers(RoleName);
@@ -21,7 +21,7 @@ namespace Hiring.Controllers.Admin
         }
 
         [HttpPut]
-        [Route(RouteClass.Admin.UpdateActivationOfUser)]
+        [Route(RouteClass.AdminRoute.UpdateActivationOfUser)]
         public async Task<IActionResult> UpdateActivationOfUser(string UserId)
         {
             var result = await _AcceptOrRefuseEmolyerServcie.UpdateActivationOfUser(UserId);

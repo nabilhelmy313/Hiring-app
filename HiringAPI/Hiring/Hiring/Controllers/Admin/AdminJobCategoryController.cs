@@ -14,21 +14,21 @@ namespace Hiring.Controllers.Admin
             _adminJobCategoryService = adminJobCategoryService;
         }
         [HttpPost]
-        [Route(RouteClass.AdminJobCategory.CreateUpdateCategory)]
+        [Route(RouteClass.AdminJobCategoryRoute.CreateUpdateCategory)]
         public async Task<IActionResult> CreateUpdateCategory([FromForm] CreatejobCategoryDto createjobCategoryDto)
         {
             var response = await _adminJobCategoryService.CreateJobCategory(createjobCategoryDto);
             return Ok(response);
         }
         [HttpPut]
-        [Route(RouteClass.AdminJobCategory.DeleteJobCategory)]
+        [Route(RouteClass.AdminJobCategoryRoute.DeleteJobCategory)]
         public async Task<IActionResult> DeleteJobCategory([FromQuery] Guid id)
         {
             var response = await _adminJobCategoryService.DeleteJobCategory(id);
             return Ok(response);
         }
         [HttpGet]
-        [Route(RouteClass.AdminJobCategory.GetAllJobCategory)]
+        [Route(RouteClass.AdminJobCategoryRoute.GetAllJobCategory)]
         public async Task<IActionResult> GetAllJobCategory()
         {
             var response = await _adminJobCategoryService.GetJobCategory();

@@ -22,9 +22,9 @@ namespace Persistence
         public virtual async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null)
         {
             if (predicate == null)
-                return await _dbContext.Set<T>().ToListAsync();
+                return await _dbContext.Set<T>().Where(a=>!a.Is_Deleted).ToListAsync();
             else
-                return await _dbContext.Set<T>().Where(predicate).ToListAsync();
+                return await _dbContext.Set<T>().Where(a=>!a.Is_Deleted ).Where(predicate).ToListAsync();
         }
 
     

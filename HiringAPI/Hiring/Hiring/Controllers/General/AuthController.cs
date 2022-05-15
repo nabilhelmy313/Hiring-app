@@ -18,7 +18,7 @@ namespace Hiring.Controllers.General
         }
         [AllowAnonymous]
         [HttpPost]
-        [Route(RouteClass.Auth.Login)]
+        [Route(RouteClass.AuthRoute.Login)]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
             var token = await _userService.Token(loginDto);
@@ -26,7 +26,7 @@ namespace Hiring.Controllers.General
         }
         [AllowAnonymous]
         [HttpPost]
-        [Route(RouteClass.Auth.Register)]
+        [Route(RouteClass.AuthRoute.Register)]
         public async Task<IActionResult> Register([FromBody] RegisterDto RegisterDto)
         {
             var token = await _userService.RegisterAccounUser(RegisterDto);

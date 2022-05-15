@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GetEmployerInfoDto } from 'src/app/models/admin/GetEmployerInfodto';
 import { EmployerRequestService } from 'src/app/shared/services/admin/employer-request.service';
 import { SweetalertService } from 'src/app/shared/services/general/sweetalert.service';
 
@@ -14,7 +13,7 @@ export class CompanyRequestsComponent implements OnInit {
     private _sweetalertService: SweetalertService
   ) {}
 
-  GetEmployerInfoDtos!: GetEmployerInfoDto[];
+  GetEmployerInfoDtos!: any[];
   ngOnInit(): void {
     this.getEmployers();
   }

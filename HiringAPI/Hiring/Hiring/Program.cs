@@ -15,10 +15,10 @@ using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using Persistence.Repositories.Auth;
 using Persistence.Repositories.General;
-using Persistence.Repositories.Job;
 using System.Text;
 using Application.Services.Employer;
 using Application.Interfaces.Services.Employer;
+using Persistence.Repositories.Admin;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -108,6 +108,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 builder.Services.AddScoped<IAttachmentRepository, AttachmentRepository>();
 builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
+builder.Services.AddScoped<IJobRepository, JobRepository>();
 
 #endregion
 
@@ -115,7 +116,7 @@ builder.Services.AddScoped<IJobCategoryRepository, JobCategoryRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IAdminJobCategoryService, AdminJobCategoryService>();
-builder.Services.AddScoped<IAdminJobCategoryService, AdminJobCategoryService>();
+builder.Services.AddScoped<IAcceptOrRefuseEmolyerServcie, AcceptOrRefuseEmolyerServcie>();
 builder.Services.AddScoped<IAddJobService, AddJobService>();
 #endregion
 
