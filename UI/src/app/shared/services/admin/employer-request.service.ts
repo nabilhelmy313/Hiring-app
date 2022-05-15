@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { ServiceResponse } from 'src/app/models/general/ServiceResponse';
-import { GetEmployerInfoDto } from 'src/app/models/admin/GetEmployerInfodto';
+import { GetEmployerInfoDto } from 'src/app/models/admin/GetEmployerInfoDto';
 
 const Url=environment.apiURL
 @Injectable({

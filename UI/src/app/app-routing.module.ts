@@ -5,6 +5,8 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './layout/main/main.component';
 import { PublicHomeComponent } from './pages/public-home/public-home.component';
+import { JobCategoryComponent } from './pages/admin/job-category/job-category.component';
+import { CompanyRequestsComponent } from './pages/admin/company-requests/company-requests.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,21 @@ const routes: Routes = [
       {
         path:'account',
         component:AdminPageComponent,
+        children: [
+          {
+            path: 'JobCategory',
+            component: JobCategoryComponent,
+          },
+          {
+            path: 'CompanyRequest',
+            component: CompanyRequestsComponent,
+          },
+        ]
       }
+
+
+
+
 
     ]
   }
