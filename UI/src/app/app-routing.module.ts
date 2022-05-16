@@ -1,3 +1,4 @@
+import { AddJobComponent } from './pages/admin/add-job/add-job.component';
 import { AdminPageComponent } from './pages/admin/admin-page/admin-page.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
           {
             path: 'CompanyRequest',
             component: CompanyRequestsComponent,
+          },
+          {
+            path: 'AddJob',
+            component: AddJobComponent,
           },
         ]
       }

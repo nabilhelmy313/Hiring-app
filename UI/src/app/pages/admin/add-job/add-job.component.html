@@ -1,0 +1,109 @@
+  <!-- Post Job Section Start -->
+  <div class="job-post ">
+    <div class="container">
+        <form class="job-post-from" [formGroup]="AddJobForm">
+            <h2>Fill Up Your Job information</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Job Title</label>
+                        <input type="text" class="form-control" id="exampleInput1" placeholder="Job Title or Keyword" formControlName="jobTitle">
+                        <small class="text-danger mt-3" *ngIf="AddJobForm.get('jobTitle')?.invalid && AddJobForm.get('jobTitle')?.touched">
+                          job Title  is required
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Job Category</label>
+                        <select class="form-control" formControlName="jobCategoryId">
+                            <option data-display="Category">Category</option>
+                            <option *ngFor="let x of dropDown;" [value]="x.id">{{x.name}}</option>
+
+                          </select>
+                          <small class="text-danger mt-3" *ngIf="AddJobForm.get('jobCategoryId')?.invalid && AddJobForm.get('jobCategoryId')?.touched">
+                            job Category  is required
+                          </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Company Email</label>
+                        <input type="email" class="form-control" id="exampleInput3" formControlName="email"  placeholder="e.g. hello@company.com" >
+                        <small class="text-danger mt-3" *ngIf="AddJobForm.get('email')?.invalid && AddJobForm.get('email')?.touched">
+                          Email  is required
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Company Website (Optional)</label>
+                        <input type="text" class="form-control" id="exampleInput4" formControlName="website" placeholder="e.g www.companyname.com">
+
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" class="form-control" id="exampleInput5" placeholder="e.g. London" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Job Type</label>
+                        <select class="form-control">
+                            <option data-display="Job Type">Job Type</option>
+                            <option value="1">Full Time</option>
+                            <option value="2">Part Time</option>
+                            <option value="4">Freelancer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Job Tags</label>
+                        <input type="text" class="form-control" id="exampleInput6" placeholder="e.g. web design, graphics design, video editing" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Salary (Optional)</label>
+                        <input type="number" class="form-control" id="exampleInput7" placeholder="e.g. $20,000">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Experience</label>
+                        <input type="text" class="form-control" id="exampleInput8" placeholder="e.g. 1 year" required>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Job Description</label>
+                        <textarea class="form-control description-area" id="exampleFormControlTextarea1" rows="6" placeholder="Job Description" required></textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="post-btn" *ngIf="!AddJobForm.invalid">
+                        Post A Job
+                    </button>
+                    <button type="button" class="post-btn-disabled" *ngIf="AddJobForm.invalid">
+                      Post A Job
+                  </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Post Job Section End -->

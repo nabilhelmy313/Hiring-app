@@ -8,6 +8,7 @@ import { JobCategoryComponent } from './admin/job-category/job-category.componen
 import { AdminProfileSideComponent } from './admin/admin-profile-side/admin-profile-side.component';
 import { AdminPageComponent } from './admin/admin-page/admin-page.component';
 import { CompanyRequestsComponent } from './admin/company-requests/company-requests.component';
+import { AddJobComponent } from './admin/add-job/add-job.component';
 
 
 
@@ -19,6 +20,7 @@ import { CompanyRequestsComponent } from './admin/company-requests/company-reque
     AdminProfileSideComponent,
     AdminPageComponent,
     CompanyRequestsComponent,
+    AddJobComponent,
   ],
   imports: [
     CommonModule,
