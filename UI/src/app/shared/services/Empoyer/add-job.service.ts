@@ -14,6 +14,7 @@ export class AddJobService {
 
   private _apiAddJob=`${Url}Job/AddJob`;
   private _apiGetCatgories=`${Url}Job/GetCatgories`;
+  private _apiDeleteJob=`${Url}Job/DeleteJob`;
 
   constructor(private _httpClient:HttpClient) { }
   AddJob(addJobDto:AddJobDto):Observable<ServiceResponse<number>>{
@@ -21,5 +22,8 @@ export class AddJobService {
   }
   GetCatgories():Observable<ServiceResponse<DropDown[]>>{
     return this._httpClient.get<ServiceResponse<DropDown[]>>(this._apiGetCatgories)
+  }
+  DeleteJob(id:string){
+    return this._httpClient.put<ServiceResponse<number>>(`${this._apiGetCatgories}?id=${id}`,null)
   }
 }

@@ -31,7 +31,7 @@ namespace Hiring.Controllers.Employer
         }
         [Route(RouteClass.JobRoute.DeleteJob)]
         [HttpPut]
-        public async Task<IActionResult> DeleteJob(Guid id)
+        public async Task<IActionResult> DeleteJob([FromQuery]Guid id)
         {
             var res = await _addJobService.DeleteJob(id);
             return Ok(res);

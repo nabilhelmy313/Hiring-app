@@ -31,7 +31,7 @@ namespace Hiring.Controllers.Admin
         [Route(RouteClass.AdminJobCategoryRoute.GetAllJobCategory)]
         public async Task<IActionResult> GetAllJobCategory()
         {
-            var response = await _adminJobCategoryService.GetJobCategory();
+            var response = await _adminJobCategoryService.GetJobCategories();
             return Ok(response);
         }
     }

@@ -92,11 +92,14 @@ namespace Application.Services.Admin
             }
         }
 
-        public async Task<ServiceResponse<List<GetJobCategoriesDto>>> GetJobCategory()
+        public async Task<ServiceResponse<List<GetJobCategoriesDto>>> GetJobCategories()
         {
             try
             {
                 var jobCategories = await _jobCategoryRepository.GetAllAsync();
+                List<GetJobCategoriesDto> getJobCategoriesDtos = new();
+
+               
                 var map = _mapper.Map<List<GetJobCategoriesDto>>(jobCategories);
                 for (int i = 0; i < map.Count; i++)
                 {

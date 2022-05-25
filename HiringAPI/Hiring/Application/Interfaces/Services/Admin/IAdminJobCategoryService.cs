@@ -11,6 +11,6 @@ namespace Application.Interfaces.Services.Admin
     {
         Task<ServiceResponse<int>> CreateJobCategory(CreatejobCategoryDto createjobCategoryDto);
         Task<ServiceResponse<int>> DeleteJobCategory(Guid id);
-        Task<ServiceResponse<List<GetJobCategoriesDto>>> GetJobCategory();
+        Task<ServiceResponse<List<GetJobCategoriesDto>>> GetJobCategories();
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pk48oZc9u4uiLittxANOpvpstctt7nfIQDS3cRnn3SE=",
+  "Hash": "t2cRl2/trOuJ7bKsoqEJdKBzT7ql8YZyYWRjyIFeJus=",
   "Source": "Hiring",
   "BasePath": "_content/Hiring",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\JobCategory\\activinspire.png"
-    },
-    {
-      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activity_monitor.png",
-      "SourceId": "Hiring",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
-      "BasePath": "_content/Hiring",
-      "RelativePath": "JobCategory/activity_monitor.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\JobCategory\\activity_monitor.png"
     },
     {
       "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\icons8-france-80.png",

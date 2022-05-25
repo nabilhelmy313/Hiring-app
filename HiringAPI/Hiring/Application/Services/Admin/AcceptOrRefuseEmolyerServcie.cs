@@ -48,7 +48,6 @@ namespace Application.Services.Admin
         {
             try
             {
-  
                 var User = await _userManager.FindByIdAsync(UserId);
                 if(User is null) return new ServiceResponse<bool>() { Success = false,Data=false,Message= CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.DataIsNull)) };
                 User.IsActive = !User.IsActive;

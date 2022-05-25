@@ -11,7 +11,7 @@ import { SweetalertService } from 'src/app/shared/services/general/sweetalert.se
 export class SignupComponent implements OnInit {
   loading: boolean = false;
   submitted: boolean = false;
-  empType!: string;
+  empType: string='Employee';
   isCompany: boolean = false;
   signupForm!: FormGroup;
   error: string = '';
