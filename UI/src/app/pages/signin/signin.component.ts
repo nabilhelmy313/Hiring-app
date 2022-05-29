@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/shared/services/auth/auth.service';
@@ -16,6 +17,7 @@ export class SigninComponent implements OnInit {
   constructor(private _authService: AuthService,
     private _sweetalertService: SweetalertService,
     private formBuilder: FormBuilder,
+    private _router:Router
   ) {
     this.loginForm = this.formBuilder.group({
       userName: ['', Validators.required],
@@ -29,6 +31,7 @@ export class SigninComponent implements OnInit {
 
   get form() { return this.loginForm.controls; }
 
+
   onSubmit() {
     console.log(this.loginForm.value);
 
@@ -40,6 +43,11 @@ export class SigninComponent implements OnInit {
       .subscribe(res => {
         if (res.success) {
           this._sweetalertService.RunAlert(res.message, true);
+          localStorage.setItem('token', JSON.stringify(res.data.token))
+          localStorage.setItem('currentUser', JSON.stringify(res.data.currentUser)),
+          this._authService.sendIsLogin(true);
+          this._router.navigate(['/']
+          )
         } else {
           this._sweetalertService.RunAlert(res.message, false);
         }

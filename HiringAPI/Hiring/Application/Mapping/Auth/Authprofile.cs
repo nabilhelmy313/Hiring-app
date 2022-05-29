@@ -17,6 +17,9 @@ namespace Application.Mapping.Auth
               .ForMember(c => c.ConfirmPassword, c => c.Ignore())
               .ReverseMap();
             CreateMap<TokenEntity, TokenDto>().ReverseMap();
+            CreateMap<ApplicationUser, ApplicationUserDto>()
+                .ForMember(c => c.ProfilePicture, c => c.Ignore())
+                .ReverseMap();
         }
     }
 }

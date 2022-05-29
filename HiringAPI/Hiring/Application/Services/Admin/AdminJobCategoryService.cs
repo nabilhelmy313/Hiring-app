@@ -35,7 +35,7 @@ namespace Application.Services.Admin
             _attachmentRepository = attachmentRepository;
         }
         public async Task<ServiceResponse<int>> CreateJobCategory(CreatejobCategoryDto createjobCategoryDto)
-        {
+        {  
             try
             {
                 if (createjobCategoryDto == null) return new ServiceResponse<int> { Success = false, Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.DataIsNull)), Data = 0 };

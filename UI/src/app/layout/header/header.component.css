@@ -68,6 +68,7 @@
   padding: 5px 20px;
   background: #F2811D;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .navbar-area .main-nav .navbar .other-option .signin-btn:hover, .navbar-area .main-nav .navbar .other-option .signup-btn:hover {

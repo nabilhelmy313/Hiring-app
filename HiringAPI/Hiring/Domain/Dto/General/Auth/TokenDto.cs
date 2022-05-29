@@ -11,8 +11,16 @@ namespace Domain.Dto.General.Auth
     {
         public string Token { get; set; }
         public DateTime Expiration { get; set; }
-        public ApplicationUser CurrentUser { get; set; }
+        public ApplicationUserDto CurrentUser { get; set; }
         public bool IsActive { get; set; }
+    }
+
+    public class ApplicationUserDto
+    {
+        public string? UserName { get; set;}
+        public string? CompanyName{ get; set; }
+        public string? FullName { get; set; }
+        public string? ProfilePicture { get; set; }
     }
 
 }
