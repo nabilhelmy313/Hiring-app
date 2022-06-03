@@ -55,7 +55,10 @@
   color: #ffffff;
   background: #F2811D !important;
 }
+.welcome{
+  color: #F2811D !important;
 
+}
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:last-child .nav-link {
   border-bottom: 0;
 }

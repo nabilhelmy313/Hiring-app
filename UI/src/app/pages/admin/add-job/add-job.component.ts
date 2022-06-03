@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AngularEditorConfig } from '@kolkov/angular-editor';
 import { AddJobDto } from 'src/app/models/Employer/AddJobDto';
 import { DropDown } from 'src/app/models/general/DropDown';
 import { AddJobService } from 'src/app/shared/services/Empoyer/add-job.service';
@@ -27,6 +28,7 @@ export class AddJobComponent implements OnInit {
       salary: [''],
       website: [''],
       jobCategoryId: ['', Validators.required],
+      jobType:['',Validators.required]
     });
   }
 

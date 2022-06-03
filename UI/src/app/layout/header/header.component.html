@@ -61,27 +61,31 @@
 	              <a href="#" class="nav-link dropdown-toggle ">language</a>
 	              <ul class="dropdown-menu">
 	                <li class="nav-item active">
-	                  <a href="blog.html" class="nav-link active"> <img src="assets/img/flags/icons8-great-britain-80.png"
-	                      class="mx-2" width="25" alt="English">English </a>
+	                  <a href="blog.html" class="nav-link active" (click)="setLang('en')"> <img src="assets/img/flags/icons8-great-britain-80.png"
+	                      class="mx-2" width="25" alt="English">
+	                    English
+	                  </a>
 	                </li>
 	                <li class="nav-item">
-	                  <a href="blog-two" class="nav-link"> <img src="assets/img/flags/icons8-germany-80.png" class="mx-2"
+	                  <a href="blog-two" class="nav-link" (click)="setLang('du')"> <img src="assets/img/flags/icons8-germany-80.png" class="mx-2"
 	                      width="25"> Dutch</a>
 	                </li>
 	                <li class="nav-item">
-	                  <a href="blog-details.html" class="nav-link"><img src="assets/img/flags/icons8-france-80.png"
+	                  <a href="blog-details.html" class="nav-link" (click)="setLang('fr')"><img src="assets/img/flags/icons8-france-80.png"
 	                      class="mx-2" width="25">French</a>
 	                </li>
 	              </ul>
 	            </li>
 	          </ul>
 
-	          <div class="other-option" *ngIf="currentUser==null||!islogin">
+	          <div class="other-option" *ngIf="!islogin">
 	            <a routerLink="signup" class="signup-btn">Sign Up</a>
 	            <a routerLink="signin" class="signin-btn">Sign In</a>
 	          </div>
-	          <div>
-	            <div class="other-option" *ngIf="currentUser!=null">
+	          <div *ngIf="islogin ||currentUser!=null">
+	            <div class="other-option">
+	              <a class="signup-btn" routerLink="account/JobCategory"><span class="welcome">Welcome</span>
+	                {{currentUser.fullName}}</a>
 	              <a class="signin-btn" (click)="logout()">Logout</a>
 	            </div>
 	          </div>
