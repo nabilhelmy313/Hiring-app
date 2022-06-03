@@ -55,13 +55,13 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="form-group" formControlName="jobType">
+                    <div class="form-group" >
                         <label>Job Type</label>
-                        <select class="form-control">
-                            <option data-display="Job Type">Job Type</option>
-                            <option value="1">Full Time</option>
-                            <option value="2">Part Time</option>
-                            <option value="3">Freelance</option>
+                        <select class="form-control" formControlName="jobType">
+                            <option data-display="Job Type" >Job Type</option>
+                            <option>Full Time</option>
+                            <option >Part Time</option>
+                            <option >Freelance</option>
                         </select>
                     </div>
                 </div>
@@ -83,16 +83,16 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Experience</label>
-                        <input type="text" class="form-control" id="exampleInput8" placeholder="e.g. 1 year" required>
+                        <input type="text" class="form-control" id="exampleInput8" placeholder="e.g. 1 year" >
                     </div>
                 </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Job Description</label>
+                        <label for="exampleFormControlTextarea1">Job Requirement</label>
 
-                        <angular-editor id="editor1" formControlName="htmlContent1"  ></angular-editor>
-                        <textarea class="form-control description-area" id="exampleFormControlTextarea1" rows="6" placeholder="Job Description" required></textarea>
+                        <!-- <angular-editor id="editor1" formControlName="htmlContent1"  ></angular-editor> -->
+                        <textarea class="form-control description-area" id="exampleFormControlTextarea1" rows="6" placeholder="Job Description" formControlName="requirement"></textarea>
                     </div>
                 </div>
 

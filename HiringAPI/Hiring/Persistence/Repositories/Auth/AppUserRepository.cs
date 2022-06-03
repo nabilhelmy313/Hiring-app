@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Persistence.Repositories.Auth
 {
-    public class AppUserRepository: IAppUserRepository
+    public class AppUserRepository : IAppUserRepository
     {
         private UserManager<ApplicationUser> _userManager;
         private readonly HiringDbContext _hiringDbContext;
@@ -33,6 +33,13 @@ namespace Persistence.Repositories.Auth
                     new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString())
                 };
 
+
+                    if (!user.IsActive)
+                        return new TokenEntity
+                        {
+                            IsActive = false
+                        };
+
                     var superSecretPassword = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(topSecretKey));
 
                     var token = new JwtSecurityToken(
@@ -51,7 +58,7 @@ namespace Persistence.Repositories.Auth
                         IsActive = user.IsActive
                     };
                 }
-               
+
                 return null;
             }
             catch (Exception ex)
@@ -62,7 +69,7 @@ namespace Persistence.Repositories.Auth
         }
         public async Task<ApplicationUser> GetUserByEmail(string email)
         {
-            var User = await _userManager.Users.Where(x => x.Email ==email).FirstOrDefaultAsync();
+            var User = await _userManager.Users.Where(x => x.Email == email).FirstOrDefaultAsync();
             return User;
         }
 
@@ -71,13 +78,15 @@ namespace Persistence.Repositories.Auth
             await _userManager.AddToRoleAsync(user, Role);
         }
 
-        public async Task<List<ApplicationUser>>GetEmployers()
+        public async Task<List<ApplicationUser>> GetEmployers()
         {
-           var user=await _userManager.Users.Include(a=>a.UserRoles).ToListAsync();
+            var user = await _userManager.Users.Where(a => a.CompanyName != "").Include(a => a.UserRoles).ToListAsync();
             return user;
         }
 
-
-
+        public async Task<ApplicationUser> GetUserById(Guid userid)
+        {
+            return await _userManager.Users.FirstOrDefaultAsync(a => a.Id == userid);
+        }
     }
 }

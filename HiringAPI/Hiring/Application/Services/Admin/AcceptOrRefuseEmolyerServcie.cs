@@ -7,6 +7,7 @@ using AutoMapper;
 using Domain.Dto.Admin;
 using Domain.Entities.General;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,11 +45,11 @@ namespace Application.Services.Admin
             }
         }
 
-        public async Task<ServiceResponse<bool>> UpdateActivationOfUser(string UserId)
+        public async Task<ServiceResponse<bool>> UpdateActivationOfUser(string userId)
         {
             try
             {
-                var User = await _userManager.FindByIdAsync(UserId);
+                var User = await _appUserRepository.GetUserById(Guid.Parse(userId));
                 if(User is null) return new ServiceResponse<bool>() { Success = false,Data=false,Message= CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.DataIsNull)) };
                 User.IsActive = !User.IsActive;
                 int result =await _unitOfWork.CommitAsync();

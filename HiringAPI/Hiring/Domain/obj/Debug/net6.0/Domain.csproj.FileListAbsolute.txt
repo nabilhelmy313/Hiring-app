@@ -46,3 +46,15 @@ C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Domain\obj\Deb
 C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.pdb
 C:\FreeLanceWork\Hiring\nabilhelmy313\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\ibrah\source\repos\Hiring-app\HiringAPI\Hiring\Domain\obj\Debug\net6.0\ref\Domain.dll

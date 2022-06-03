@@ -53,7 +53,11 @@ namespace Application.Services.Auth
                     GetToken(loginDto.UserName, loginDto.Password, "HiringSuperSecretPassword", "Hiring.com", "Hiring.com");
                 if (token == null)
                     return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "Invaild Login" };
+                if(!token.IsActive)
+                    return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "you are not accepted by admin Yet" };
+
                 var tokenModel = _Mapper.Map<TokenDto>(token);
+                
                 return new ServiceResponse<TokenDto> { Success = true, Data = tokenModel,Message="sign in succsessfully" };
             }
             catch (Exception ex)

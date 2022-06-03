@@ -12,7 +12,7 @@ const Url=environment.apiURL
 })
 export class AddJobService {
 
-  private _apiAddJob=`${Url}Job/AddJob`;
+  private _apiAddJob="https://localhost:7235/Job/AddJob";
   private _apiGetCatgories=`${Url}Job/GetCatgories`;
   private _apiDeleteJob=`${Url}Job/DeleteJob`;
 

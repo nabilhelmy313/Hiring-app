@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t2cRl2/trOuJ7bKsoqEJdKBzT7ql8YZyYWRjyIFeJus=",
+  "Hash": "FArv3vgt8LL3sVki5pSNt/6THMn6Hnd+egepniIF01Q=",
   "Source": "Hiring",
   "BasePath": "_content/Hiring",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Hiring\\wwwroot",
       "Source": "Hiring",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\3.jpg",
+      "Identity": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\3.jpg",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/3.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\3.jpg"
     },
     {
-      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activinspire.png",
+      "Identity": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\activinspire.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/activinspire.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\activinspire.png"
     },
     {
-      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\icons8-france-80.png",
+      "Identity": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\icons8-france-80.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/icons8-france-80.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\JobCategory\\icons8-france-80.png"
     },
     {
-      "Identity": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
+      "Identity": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\JobCategory\\Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
       "SourceId": "Hiring",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\work\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ibrah\\source\\repos\\Hiring-app\\HiringAPI\\Hiring\\Hiring\\wwwroot\\",
       "BasePath": "_content/Hiring",
       "RelativePath": "JobCategory/Screenshot 2022-02-01 at 01-57-48 BlazorArchitecture.png",
       "AssetKind": "All",

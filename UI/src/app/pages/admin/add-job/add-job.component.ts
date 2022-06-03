@@ -27,6 +27,7 @@ export class AddJobComponent implements OnInit {
       email: ['', [Validators.required]],
       salary: [''],
       website: [''],
+      requirement:['',Validators.required],
       jobCategoryId: ['', Validators.required],
       jobType:['',Validators.required]
     });
