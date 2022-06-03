@@ -16,7 +16,7 @@ namespace Application
         
         public static string GetCurrentLanguage()
         {
-            return System.Threading.Thread.CurrentThread.CurrentCulture.ToString();
+            return Thread.CurrentThread.CurrentCulture.ToString();
         }
 
     }

@@ -15,6 +15,11 @@ namespace Persistence.Repositories.Admin
         {
 
         }
+        public int GetJobCount(Guid id)
+        {
+            int job = _dbContext.Jobs.Where(j => j.JobCategory.Id == id).Count();
+            return job;
+        }
 
     }
 }

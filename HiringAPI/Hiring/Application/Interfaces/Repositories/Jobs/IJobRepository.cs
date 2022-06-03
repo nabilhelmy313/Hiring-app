@@ -10,5 +10,7 @@ namespace Application.Interfaces.Repositories.Jobs
 {
     public interface IJobRepository:IBaseRepository<Job>
     {
+
+
     }
 }

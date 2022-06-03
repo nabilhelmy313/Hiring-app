@@ -10,6 +10,6 @@ namespace Application.Interfaces.Repositories.Jobs
 {
     public interface IJobCategoryRepository:IBaseRepository<JobCategory>
     {
-        
+        int GetJobCount(Guid id);
     }
 }

@@ -19,6 +19,8 @@ using System.Text;
 using Application.Services.Employer;
 using Application.Interfaces.Services.Employer;
 using Persistence.Repositories.Admin;
+using Application.Interfaces.Services.Home;
+using Application.Services.Home;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -116,6 +118,7 @@ builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IAdminJobCategoryService, AdminJobCategoryService>();
+builder.Services.AddScoped<IHomeJobCategoryService, HomeJobCategoryService>();
 builder.Services.AddScoped<IAcceptOrRefuseEmolyerServcie, AcceptOrRefuseEmolyerServcie>();
 builder.Services.AddScoped<IAddJobService, AddJobService>();
 #endregion
