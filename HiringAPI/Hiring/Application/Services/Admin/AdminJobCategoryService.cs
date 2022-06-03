@@ -51,7 +51,7 @@ namespace Application.Services.Admin
                     {
                         _attachmentRepository.PhysiscalDelete(map.Id);
                     }
-                    await _fileService.UploadFile(map.Id, null, new List<IFormFile> { createjobCategoryDto.CategoryPic }, nameof(map), "000", "JobCategory", 500000);
+                    await _fileService.UploadFile(map.Id, null, new List<IFormFile> { createjobCategoryDto.CategoryPic }, nameof(category), "000", "JobCategory", 500000);
                 }
                 else
                 {
